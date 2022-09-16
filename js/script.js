@@ -22,7 +22,7 @@ const generateRCode = (url) => {
   });
 
   setTimeout(() => {
-    saveQRImg(qrSrc);
+    saveQRImg();
   }, 1000);
 };
 
@@ -35,7 +35,7 @@ const qrBgImg = () => {
   qr.innerHTML = qrImg;
 };
 
-const saveQRImg = (qrSrc) => {
+const saveQRImg = () => {
   button.href = qr.children[1].src;
   button.download = "qrcode";
 };
