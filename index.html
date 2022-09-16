@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>QR Code Generator</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+      integrity="sha512-CNgIRecGo7nphbeZ04Sc13ka07paqdeTu0WR1IM4kNcpmBAUSHSQX0FslNhTDadL4O5SAGapGt4FodqL8My0mA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="qr-header">
+      <h3>QR Code Generator</h3>
+    </header>
+
+    <main class="main-container">
+      <section class="sub-container">
+        <h1>QR Code Generator</h1>
+        <p>QR Codes allow smartphone users to scan anything. Make one now!</p>
+        <p>(Your QR Code will be generated automatically.)</p>
+
+        <div id="generate-form">
+          <input id="url" type="url" placeholder="Enter website or text" />
+        </div>
+      </section>
+      <section class="sub-container">
+        <div id="qrcode">
+          <img src="./img/qr-code.png" alt="" id="qr-img" />
+        </div>
+        <h2>QR CODE Result</h2>
+        <a id="btn" class="btn" disabled="false">Download QR Code</a>
+      </section>
+
+      <div id="generated"></div>
+    </main>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
