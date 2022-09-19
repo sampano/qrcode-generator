@@ -4,69 +4,107 @@
   margin: 0;
 }
 
-.btn {
-  width: max-content;
-  padding: 0.75rem 1.2rem;
-  border-radius: 0.4rem;
-  cursor: pointer;
-  border: 1px solid gray;
-  text-decoration: none;
-  color: black;
+img {
+  width: 100%;
+}
+h1 {
+  color: #87a2fb;
+  font-size: 2rem;
+  text-align: center;
+  padding-bottom: 0.6em;
 }
 
-.qr-header {
-  border: 1px solid black;
-  padding: 1rem 0;
-
-  background-color: #7d70ba;
-  color: white;
-}
-.main-container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  margin: 2rem auto 0;
-  max-width: 70%;
-  height: 500px;
+h3 {
+  font-size: 1.2rem;
+  color: #eeeeee;
 }
 
-.sub-container {
-  border: 1px solid gray;
-  border-radius: 2rem;
-  margin: 0 1rem;
-  padding: 2.4rem 5rem;
+h2 {
+  font-size: 1.6rem;
 }
 
 input {
   width: 100%;
-  margin-bottom: 1rem;
-  padding: 0.75rem 1.2rem;
-  border-radius: 0.5rem;
-  border: 1px solid gray;
-  resize: none;
-  margin: 0.5rem 0;
+  padding: 1em 0;
 }
-
-p {
-  margin: 0.5rem 0;
-}
-h1 {
-  font-size: 3rem;
-  margin: 0.5rem 0;
-  color: #7d70ba;
-}
-h3 {
-  margin-left: 0.5rem;
-}
-h2 {
-  font-size: 1.1rem;
-  margin-bottom: 0.8rem;
-}
-h4,
-h2 {
+a {
+  display: inline-block;
+  background-color: #87a2fb;
+  padding: 1em 2em;
+  border-radius: 2em;
+  text-decoration: none;
   text-transform: uppercase;
-  color: #7d70ba;
+  font-weight: 500;
+  color: #fff;
+}
+.qr-img-container {
+  margin: 0 auto;
+}
+.nav-text p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
 }
 
-img {
-  width: 300px;
+.main-text p {
+  font-size: 0.8rem;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+
+.main-text-container {
+  padding-bottom: 5em;
+}
+.nav {
+  width: 100%;
+  padding: 1.5em 0;
+  background-color: #87a2fb;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main {
+  width: 100%;
+  padding: 2em 0;
+}
+
+.qr-result {
+  padding-top: 3em;
+}
+
+/* ------- MEDIA QUERIES MEDIUM DEVICES ------- */
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    width: 100%;
+    padding: 1.5em 0;
+    background-color: #87a2fb;
+  }
+
+  .main {
+    width: 100%;
+    padding: 2em 0;
+  }
+  .container {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .main-text-container {
+    width: 60%;
+  }
+
+  .sub-container {
+    width: 35%;
+    margin-left: auto;
+  }
+  .nav-text {
+    display: block;
+  }
+  img {
+    width: 100%;
+  }
 }

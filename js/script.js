@@ -42,8 +42,8 @@ const saveQRImg = () => {
 
 const disabledBtn = () => {
   button.removeAttribute("download");
+  button.href = "";
 };
-
 button.addEventListener("click", saveQRImg);
 
 url.addEventListener("paste", submitQR);

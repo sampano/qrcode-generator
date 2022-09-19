@@ -20,29 +20,32 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="qr-header">
-      <h3>QR Code Generator</h3>
-    </header>
+    <nav class="nav">
+      <div class="container nav-text">
+        <h3>QR Code Generator</h3>
+        <p>Create Your Code For Free</p>
+      </div>
+    </nav>
 
-    <main class="main-container">
-      <section class="sub-container">
-        <h1>QR Code Generator</h1>
-        <p>QR Codes allow smartphone users to scan anything. Make one now!</p>
-        <p>(Your QR Code will be generated automatically.)</p>
+    <main class="main main-text">
+      <section class="container">
+        <div class="main-text-container col">
+          <h1>QR Code Generator</h1>
+          <p>QR Codes allow smartphone users to scan anything. Make one now!</p>
+          <p>(Your QR Code will be generated automatically.)</p>
+          <div id="generate-form">
+            <input id="url" type="url" placeholder="Enter website or text" />
+          </div>
+        </div>
 
-        <div id="generate-form">
-          <input id="url" type="url" placeholder="Enter website or text" />
+        <div class="sub-container">
+          <div id="qrcode" class="qr-img-container col">
+            <img src="./img/qr-code.png" alt="" id="qr-img" />
+          </div>
+          <h2>QR CODE Result</h2>
+          <a id="btn" class="btn" disabled="true">Download QR Code</a>
         </div>
       </section>
-      <section class="sub-container">
-        <div id="qrcode">
-          <img src="./img/qr-code.png" alt="" id="qr-img" />
-        </div>
-        <h2>QR CODE Result</h2>
-        <a id="btn" class="btn" disabled="false">Download QR Code</a>
-      </section>
-
-      <div id="generated"></div>
     </main>
     <script src="./js/script.js"></script>
   </body>
